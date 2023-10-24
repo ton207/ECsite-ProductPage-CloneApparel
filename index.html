@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECsite-ProductPage</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+</head>
+
+<body>
+    <!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+            header
+    ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+    <header>
+        <div class="site-title">
+            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+        </div>
+
+        <nav class="wrapper">
+            <ul class="menu">
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">NEW</a></li>
+                <li><a href="#">VINTAGE</a></li>
+                <li><a href="#">CATEGORY</a></li>
+                <li><a href="#">LOOKBOOK</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+            <ul class="login">
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header> 
+    
+    <!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+            main
+    ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+    
+    <main>
+        <div class="item wrapper">
+            <div class="item-image">
+                <img src="	https://code-jump.com/demo/html/ec/img/item.jpg" alt="">
+            </div>
+
+            <div class="item-info">
+                <h1 class="item-title">TOTALLY Short Sleeve Shir</h1>
+
+                <p>Lorem ipsum dolor sit amet. Non consequatur galisum eos officia repellat et
+                     cupiditate obcaecati ex dolore itaque et blanditiis galisum ab quia dolore.
+                      Vel magni quia et quia repellat sed quidem laboriosam a sunt dolorum et 
+                      suscipit mollitia sit perferendis modi?</p>
+
+                <p>￥9,999 +tax</p>
+                
+                <!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                    table.order-table
+                ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+                <table class="order-table">
+                    <!-- 1行目（列項目） -->
+                    <thead>
+                        <tr>
+                            <th class="color"></th>
+                            <th class="size"></th>
+                            <th class="quantity"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- 2行目：Sサイズ -->
+                        <tr>
+                            <td>White</td>
+                            <td>S</td>
+                            <td>
+                                <select class="quantity_s">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <!-- 3行目：Mサイズ -->
+                        <tr>
+                            <td>White</td>
+                            <td>M</td>
+                            <td>
+                                <select class="quantity_m">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <!-- 4行目：Lサイズ -->
+                        <tr>
+                            <td>White</td>
+                            <td>L</td>
+                            <td>
+                                <select class="quantity_l">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a href="#" class="cart-btn">ADD TO CART</a>
+
+                
+                <!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                    table.size-table
+                ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+                <table class="size-table">
+                    <!-- 1行目（列項目） -->
+                    <thead>
+                        <tr>
+                            <th class="size">Size</th>
+                            <th class="chest">Chest</th>
+                            <th class="weist">Weist</th>
+                            <th class="height">Height</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!-- 2行目：Sサイズ -->
+                        <tr>
+                            <th>S</th>
+                            <td>99 ～ 99</td>
+                            <td>99 ～ 99</td>
+                            <td>99 ～ 99</td>
+                        </tr>
+
+                        <!-- 3行目：Mサイズ -->
+                        <tr>
+                            <th>M</th>
+                            <td>99 ～ 99</td>
+                            <td>99 ～ 99</td>
+                            <td>99 ～ 99</td>
+                        </tr>
+
+                        <!-- 4行目：Lサイズ -->
+                        <tr>
+                            <th>L</th>
+                            <td>99 ～ 99</td>
+                            <td>99 ～ 99</td>
+                            <td>99 ～ 99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+            footer
+    ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー -->
+
+    <footer class="wrapper">
+        <p class="copyright">&copy; TOTALLY</p>
+    </footer>
+
+</body>
+</html>
+
+
