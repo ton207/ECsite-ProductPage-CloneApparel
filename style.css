@@ -44,14 +44,18 @@ header {
     border-bottom: solid 1px #c3c3c3;
 }
 nav {
+    /* 「クラスmenuナビ」と「クラスloginナビ」を、横並びにする */
     display: flex;
+    /* フレックスアイテムの縦軸を上下中央揃え */
     align-items: center;
+    /* flexアイテムの両端揃え */
     justify-content: space-between;
 }
-/* クラスmenuのナビをとクラスloginのナビを、それぞれ横並びにする */
+/* 「クラスmenuのナビ」も「クラスloginナビ」も、それぞれ中身を、横並びにする */
 nav .menu,
 nav .login {
     display: flex;
+    /* 子要素を親要素の中で上下中央揃え */
     align-items: center;
 }
 nav .menu li {
@@ -72,7 +76,7 @@ nav .login li {
 }
 .item-image {
     max-width: 400px;
-    /* テキストが長い場合でも「テキストと横並びにした画像」が縮んでしまうことなく指定したwidthを反映させる */
+    /* テキストが長い場合でも「テキストと横並びにした画像」が縮むことなく指定widthを反映 */
     flex-shrink: 0;
     margin-right: 60px;
 }
@@ -81,10 +85,11 @@ nav .login li {
     line-height: 1.9;
 }
 
-/* h1タグ。 align-itemで高さを中央にそろえる。align-itemsは「display:flex;と一緒」に「親要素に」指定。 */
+/* h1タグ。 */
 .item .item-info .item-title {
     height: 60px;
     display: flex;
+    /* 高さを中央にそろえる。display:flex;と一緒に親要素に指定。 */
     align-items: center;
     border-top: 1px solid #c3c3c3;
     border-bottom: 1px solid #c3c3c3;
@@ -96,7 +101,8 @@ nav .login li {
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
     orderテーブル
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-/* テーブル全体幅 */
+
+/* テーブル全体幅 　　　列幅：カラー20%＋サイズ20%＋quantity60% = 100%　*/
 .item .item-info .order-table {
     width: 100%;
     margin-bottom: 20%;
@@ -110,13 +116,11 @@ nav .login li {
     width: 60%;
 }
 
-/* テーブルの線が重ならないように設定（外枠なし） */
-
+/* テーブルの線が重複しないように設定（外枠なし） */
 /* １．tdの上に設定  */
 .item .item-info .order-table td {
     border-top: solid 1px #c3c3c3;
 }
-
 /* ２．th、tdの右に設定  */
 .item .item-info .order-table th,
 .item .item-info .order-table td {
@@ -126,7 +130,6 @@ nav .login li {
     /* 水平方向の中央寄せ */
     text-align: center;
 }
-
 /* 3．th、tdの最後だけ右の線を消す */
 .item .item-info .order-table th:last-child,
 .item .item-info .order-table td:last-child {
@@ -159,7 +162,7 @@ nav .login li {
     sizeテーブル
 ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
-/* テーブルの線は重ならないように設定（外枠あり） */
+/* テーブルの線が重複重しないよう設定（外枠あり） */
 /* 1．テーブルの上と左に設定 */
 .item .item-info .size-table {
     width: 100%;
